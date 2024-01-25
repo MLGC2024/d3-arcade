@@ -63,7 +63,7 @@ Config.Arcade = {
 }
 
 -- "single use" prices to be used on non gamehouse machines (e,g props in houses, etc, via qb-target. check readme.md)
-Config.singleUsePrice = 500
+Config.singleUsePrice = 50
 -- arcade machine model hashes
 Config.ArcadeModels = {
     815879628,
@@ -81,16 +81,20 @@ Config.ArcadeModels = {
 -- ticket price, and time in arcade.
 Config.ticketPrice = {
     [_U("bronz")] = {
-        price = 300,
+        price = 30,
         time = 10, -- in minutes
     },
     [_U("silver")] = {
-        price = 600,
+        price = 50,
         time = 20, -- in minutes
     },
     [_U("gold")] = {
-        price = 900,
+        price = 90,
         time = 30, -- in minutes
+    },
+    [_U("platinum")] = {
+        price = 150,
+        time = 60, -- in minutes
     },
 }
 
