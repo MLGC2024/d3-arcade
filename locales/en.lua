@@ -13,6 +13,7 @@ Locales['en'] = {
 	["bronz"]  = "bronz",
 	["silver"] = "silver",
 	["gold"]   = "gold",
+	["platinum"]   = "platinum",
 
 	["ticket_label"] = "ticket %s",
 
