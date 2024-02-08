@@ -35,6 +35,7 @@ AddEventHandler("d3-arcade:buyTicket", function(ticket)
     local Player = QBCore.Functions.GetPlayer(source)
     if Player.Functions.RemoveMoney("cash", data.price, "arcade") then
         TriggerClientEvent("d3-arcade:ticketResult", source, ticket);
+        TriggerServerEvent('wais:addmissionxp:buyticket', src, 1) -- Added by Pamela for wais-battlepass
     else
         TriggerClientEvent("d3-arcade:nomoney", source);
     end
